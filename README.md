@@ -30,12 +30,12 @@ Ensuite lancer cette commande pour exécuter l'application :
 
 Le resultat donne une page suivante : 
 
-![](/home/constantin/Documents/ThinkThank/accueil.png) 
+![](accueil.png) 
 
 Pour accéder à la page d'authentification , cliquer sur le lien  "Sauter" .
 
-![](/home/constantin/Documents/ThinkThank/Sauter.png)   
+![](Sauter.png)   
 
 Et on accède à cette page :
 
-![](/home/constantin/Documents/ThinkThank/login.png) 
+![](login.png) 
