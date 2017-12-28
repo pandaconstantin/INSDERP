@@ -18,31 +18,31 @@
 
         <div class="oj-flex-item">
           <div class="oj-hybrid-padding-start">
-            <h1 class="demo-signin-appname">Oracle<div style="font-weight: 400; padding-top: 4px;">FixItFast</div></h1>
+            <h1 class="demo-signin-appname"><div style="font-weight: 400; padding-top: 4px;">Gestion des équipements</div></h1>
           </div>
 
           <div class="demo-signin-form-container oj-hybrid-padding">
             <div class="demo-signin-form oj-hybrid-padding-vertical">
               <form method="post" action="" name="signInForm">
-                <oj-input-text id='MobilePTUsername' placeholder='User Name' spellcheck='false' autocorrect='off' autocapitalize=off aria-label='User Name' value='{{userName}}' required='true'></oj-input-text>
-                <oj-input-password id='MobilePTPassword' placeholder='Password' aria-label='password' value='{{passWord}}' required='true'></oj-input-password>
+                <oj-input-text id='MobilePTUsername' placeholder="Nom d'utilisateur" spellcheck='false' autocorrect='off' autocapitalize=off aria-label='User Name' value='{{userName}}' required='true'></oj-input-text>
+                <oj-input-password id='MobilePTPassword' placeholder="Mot de passe" aria-label='password' value='{{passWord}}' required='true'></oj-input-password>
               </form>
 
               <div class="oj-hybrid-padding-top">
                 <oj-button id='signInBtn' class='demo-signin-button' chroming='full'
-                  on-click='[[signIn]]'><span class="demo-signin-button-label"><span class='oj-hybrid-padding-horizontal'>Sign In</span></span></oj-button>
-                <a id="cannotSignInBtn" href="javascript:;" class="forgotLinkM">Can't sign in?</a>
+                  on-click='[[signIn]]'><span class="demo-signin-button-label"><span class='oj-hybrid-padding-horizontal'>Se connecter</span></span></oj-button>
+                <a id="cannotSignInBtn" href="javascript:;" class="forgotLinkM">Impossible de se connecter ?</a>
               </div>
 
               <oj-checkboxset id='rememberUserNameCheckBox' aria-label='Remeber User Name' value='{{rememberUserName}}' class='oj-checkboxset-no-chrome oj-checkboxset-input-start'>
-                <oj-option id='rememberUserName' value='remember'>Remember User Name</oj-option>
+                <oj-option id='rememberUserName' value='remember'>Se souvenir du nom d'utilisateur</oj-option>
               </oj-checkboxset>
             </div>
           </div>
         </div>
 
       <div  class="oj-flex-item oj-sm-align-self-flex-end demo-flex-zero" style="padding: 20px;">
-        <img src="css/images/oracle-black.svg" alt="Oracle" title="Oracle" height="11">
+        <img src="css/images/oracle-black.svg" alt="INSD" title="INSD" height="11">
       </div>
     </div>
   </div>

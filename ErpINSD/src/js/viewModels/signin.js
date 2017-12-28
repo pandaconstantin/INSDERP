@@ -26,8 +26,8 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'appController',
     }
 
     // Replace with state save logic for rememberUserName
-    self.userName = ko.observable('Harry Carson');
-    self.passWord = ko.observable('password');
+    self.userName = ko.observable('');
+    self.passWord = ko.observable('');
     self.rememberUserName = ko.observable(['remember']);
 
     // Replace with sign in authentication

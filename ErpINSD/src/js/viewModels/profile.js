@@ -35,9 +35,9 @@ define(['knockout', 'jquery', 'appController', 'ojs/ojknockout', 'ojs/ojinputtex
 
       var rightBtnLabel = ko.computed(function(){
         if(self.editMode()) {
-          return 'Save';
+          return 'Enregistrer';
         } else {
-          return 'Edit';
+          return 'Modifier';
         }
       });
 

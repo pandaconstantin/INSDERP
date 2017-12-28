@@ -21,7 +21,7 @@ define(['knockout', 'jquery', 'ojs/ojknockout'], function(ko, $) {
       if(self.step() === 3) {
         return 'Sign In';
       }
-      return 'Skip';
+      return 'Sauter';
     });
 
     self.startTour = function() {
