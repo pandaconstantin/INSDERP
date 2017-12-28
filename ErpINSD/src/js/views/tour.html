@@ -1,0 +1,22 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-applayout-page demo-tour-dark-bg">
+  <div class="oj-applayout-fixed-top demo-transparent-top">
+    <header role="banner" class="demo-transparent-header oj-flex-bar oj-hybrid-applayout-header oj-sm-align-items-center">
+      <div class="oj-flex-bar-end">
+        <oj-button id='skipTourBtn' class='demo-tour-button' on-click='[[$root.goToSignIn]]' chroming='half'>
+          <label class='demo-tour-button-label' data-bind='text: skipOrSignIn'/>
+        </oj-button>
+      </div>
+    </header>
+  </div>
+
+  <div data-bind="ojModule: {name: tourPage, viewName: tourPage,
+                             animation: oj.ModuleAnimations.createAnimation({'effect':'slideOut','duration':'0.3s', 'persist': 'all'}, {'effect':'slideIn','duration':'0.3s'}, false)}"></div>
+</div>

@@ -1,0 +1,30 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div data-bind="with: $parent.allCustomers">
+
+  <div class="oj-hybrid-padding">Please select a customer from the list:</div>
+  
+  <div aria-label="customers" style="overflow: auto;">
+    <oj-radioset class="oj-radioset-input-end" id='customerSelectionRadioSet'
+          value='{{$parents[1].newIncidentModel().customerId}}'
+          on-value-changed='[[$parents[1].customerSelectionChange]]' 
+          required='true'
+          display-options.messages='notewindow'>
+      <!-- ko foreach: $data -->
+      <oj-option class='demo-incident-radioset-item' 
+                 data-bind='attr: {id: id, value: id}'>
+         <div slot="startIcon" class="demo-customer-avatar-wrapper oj-flex oj-sm-align-items-center" data-bind="attr: {style: 'border: 1px solid ' + $root.appUtilities.formatAvatarColor('Customer', id)}">
+           <div class="demo-customer-avatar" data-bind="text: $root.appUtilities.formatInitials(firstName, lastName), attr: {style: 'background: ' + $root.appUtilities.formatAvatarColor('Customer', id), id: id+'Avatar'}"></div>
+         </div>
+         <span class="oj-sm-margin-2x-start" data-bind="text: firstName + ' ' + lastName, attr: {for: id, id: id+'Name'}"></span>
+      </oj-option> 
+      <!-- /ko -->
+    </oj-radioset>
+  </div>
+</div>

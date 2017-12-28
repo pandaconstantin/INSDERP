@@ -1,0 +1,29 @@
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<!--
+ Copyright (c) 2014, 2017, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="demo-tour-container">
+  <oj-film-strip class='demo-filmstrip-container' data-oj-context id='filmStrip'
+      max-items-per-page='1'
+      arrow-visibility='hidden'
+      on-current-item-changed='[[function(event) { return $parent.filmStripOptionChange(event); }]]' aria-label='tour film strip'>
+    <!-- ko foreach: steps -->
+    <div class="demo-filmstrip-item oj-hybrid-padding-horizontal" data-bind="style: { display: function() { return getItemInitialDisplay($index());} }">
+      <div>
+        <img data-bind="attr: {src: imgSrc, width: '200px', height: '200px', margin: 'auto' }">
+      </div>
+      <div style="padding-top: 4rem;">
+        <h1 data-bind="text: title.toUpperCase(), style: {color: color}"></h1>
+        <h4 data-bind="text: description" class="demo-tour-content-subtitle"></h4>
+      </div>
+
+    </div>
+    <!-- /ko -->
+  </oj-film-strip>
+
+  <oj-paging-control class='demo-overlaid-paging-control' data='[[pagingModel]]' page-size='0' page-options.type='dots'></oj-paging-control>
+</div>
